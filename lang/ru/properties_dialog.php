@@ -1,4 +1,4 @@
 <?php
 defined('B_PROLOG_INCLUDED') || die;
 
-$MESS['LINK_STRING'] = 'Ссылка на файл';
+$MESS['PATH_TO_DOCX_FILE'] = 'Ссылка на файл';
