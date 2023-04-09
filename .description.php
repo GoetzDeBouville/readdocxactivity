@@ -1,5 +1,5 @@
 <?php
-defined('B_PROLOG_INCLUDED') || die;
+if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
 
 use Bitrix\Bizproc\FieldType;
 use Bitrix\Main\Localization\Loc;
@@ -15,5 +15,10 @@ $arActivityDescription = array(
     'CATEGORY' => array(
         'ID' => 'other',
     ),
-    'ADDITIONAL_RESULT' => array('Text')
+    'RETURN' => [
+        'Text' => [
+            'NAME' => Loc::getMessage('DOCX_READER_RETURN_TEXT'),
+            'TYPE' => FieldType::STRING,
+        ],
+    ],
 );
